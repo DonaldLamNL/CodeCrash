@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      const path = location.pathname.replace(/^\/CodeCrash/, '')
+      const redirectUrl = '/CodeCrash/?redirect=' + encodeURIComponent(path + location.search + location.hash)
+      window.location.replace(redirectUrl)
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
